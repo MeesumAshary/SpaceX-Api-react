@@ -9,12 +9,12 @@ import Starlink from './components/Starlink/Starlink';
 function App() {
   return (
     <div className="App">
-
+      
       <Home />
       <Launches />
       <About />
-      <Rockets/>
-      <Starlink/>
+      <Rockets />
+      <Starlink />
 
     </div>
   );
