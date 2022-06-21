@@ -3,11 +3,11 @@ import axios from 'axios'
 
 function Launches(props) {
 
-    let url = 'https://api.spacexdata.com/v4/launches/latest'
-     axios.get(url)
-     .then((data) => {
-         console.log(data)
-     });
+    // let url = 'https://api.spacexdata.com/v4/launches/latest'
+    //  axios.get(url)
+    //  .then((data) => {
+    //      console.log(data)
+    //  });
 
     return (
         <div>
