@@ -8,11 +8,12 @@ import Starlink from './components/Starlink/Starlink';
 import {Route, Routes, Link} from 'react-router-dom';
 import NavBar from './components/Nav/NavBar';
 
+
 function App() {
 	return (
 		<div className='App'>
-			<NavBar/>
-
+			<NavBar />
+			
 		</div>
 	);
 }

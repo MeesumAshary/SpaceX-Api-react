@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0
 }
+.launch-container {
+    background: rgb(0, 29, 61, 1);
+    width: 50vh;
+    /* height: 20vh; */
+    margin: 5em 0;
+    color: white;
+    display: grid;
+
+
+}
+
+.launch-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

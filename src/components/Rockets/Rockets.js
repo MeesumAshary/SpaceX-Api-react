@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
+import RocketDetails from '../RocketDetails/RocketDetails'
 
 function Rockets(props) {
 	const [rockets, setRockets] = useState(null);
-	const url = 'https://api.spacexdata.com/v4/rockets';
+	const url = 'https://api.spacexdata.com/v4/rockets/';
 
 	useEffect(() => {
 		axios.get(url).then((res) => {
-			// console.log(res.data);
+			console.log(res.data);
 			setRockets(res.data);
 		});
 	}, []);
@@ -21,16 +22,20 @@ function Rockets(props) {
 				<div>
 					{rockets.map((rocket, index) => {
 						return (
-							<div className='List' key={index}>
-								<div>{rocket.name} </div>
-								<div>
-									<img src={rocket.flickr_images[1]} alt='' />
+							<Link to= {`/RocketDetails/${rocket.id}`}>
+								<div className='List' key={index}>
+									<div>{rocket.name} </div>
+									<div>
+										<img src={rocket.flickr_images[1]} alt='' />
+									</div>
+									<div>{rocket.description}</div>
 								</div>
-								<div>{rocket.description}</div>
-							</div>
+							</Link>
 						);
 					})}
 				</div>
+				
+				
 			</div>
 		);
 	}
