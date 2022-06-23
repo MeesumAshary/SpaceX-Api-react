@@ -1,0 +1,23 @@
+div>div>img {
+    margin-top: 10em;
+}
+
+form {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+form>button{
+    background: black;
+    height: 3em;
+    width: 8em;
+    color: white
+}
+form>input{
+    height: 4em;
+    width: 20em;
+}

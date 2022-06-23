@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.starlink-container{
+    background: rgb(0, 29, 61,1);
+    width: 50vh;
+    height: 20vh;
+    margin: 5em 0;
+    color: white;
+    display: grid;
+    
+
+}
+
+.list-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

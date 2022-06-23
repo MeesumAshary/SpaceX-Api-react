@@ -18,19 +18,19 @@ function Rockets(props) {
 		return (
 			<div>
 				<h1>Rockets</h1>
-				<ul>
+				<div>
 					{rockets.map((rocket, index) => {
 						return (
-							<li className='List' key={index}>
+							<div className='List' key={index}>
 								<div>{rocket.name} </div>
 								<div>
 									<img src={rocket.flickr_images[1]} alt='' />
 								</div>
 								<div>{rocket.description}</div>
-							</li>
+							</div>
 						);
 					})}
-				</ul>
+				</div>
 			</div>
 		);
 	}
