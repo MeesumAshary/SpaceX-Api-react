@@ -17,10 +17,36 @@ function LaunchDetails(props) {
 			});
 		}, []);
     
-    return (<div>
-        <h1>Launche Details</h1>
+        
+    if (launchDetails){    
+    return (
+			<div>
+				<h1>Launch Details</h1>
 
-    </div>);
+				<div className='launchDetails-container' key={launchDetails.id}>
+					<div className='launchDetails-name'>{launchDetails.name}</div>
+					{launchDetails.name.split(' ')[0]}
+					<div className='flight-number'>
+						Flight # {launchDetails.flight_number}
+					</div>
+					<div className='launchDetails-id-date'>
+						{launchDetails.id} - {launchDetails.date_local}
+					</div>
+					<div className='launchDetails-patch'>
+						<img src={launchDetails.links.patch.small} alt='' />
+					</div>
+					<div>
+						<iframe
+							src={`https://www.youtube.com/embed/${launchDetails.links.youtube_id}`}
+							frameBorder='0'
+							allow='autoplay; encrypted-media'
+							allowFullScreen
+							title='video'
+						/>{' '}
+					</div>
+				</div>
+			</div>
+		);}
 }
 
 export default LaunchDetails;
