@@ -14,7 +14,7 @@ function NavBar(props) {
 		<div className='nav-container'>
 			<ul className='nav-bar'>
 				<Link to='/'>
-					<li className='nav-list home-list'>MeesX</li>
+					<li className='nav-list home-list'>MeesX🚀</li>
 				</Link>
 				<Link to='/'>
 					<li className='nav-list home-list'>Home</li>

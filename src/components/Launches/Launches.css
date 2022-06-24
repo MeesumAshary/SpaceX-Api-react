@@ -18,35 +18,40 @@ h2{
 .launch-container{
     display:flex;
     flex-direction: column;
-    width: 100vw;
+    
    
 
 }
 
 .launch-card {
-    display:grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
     box-shadow: 0 4px 15px 0 #fcfcfc33; 
     transition: box-shadow 0.3s;
     color: white;
     background-color: rgb(15, 16, 17);
-    width: 60vw;
     align-self: center;
-    margin-top: 5em;
-    
-    
+    margin-top: 5em;  
+    padding: 2em 
+}
+.launch-name-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.patch-details{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
-.patch-details {
-    grid-row:1 /span 2;
-    grid-column: 2;
-}
-.launch-data{
-    grid-row: 2;
-    grid-column: 1;
-    padding: 2em;
-    
+.launch-info{
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 2;
+    margin-top: 3em;
 }
 
 .launch-name{
@@ -54,7 +59,7 @@ h2{
     font-size: 3em;
     color: rgb(41, 95, 172);
     border-bottom: solid rgb(41, 95, 172) 0.1em;
-    border-right: solid rgb(41, 95, 172) 0.1em;
+  
 }
 
 .launch-date,.launch-success,.launch-upcoming,.launch-id{
@@ -64,27 +69,8 @@ h2{
     align-self: center;
     
 }
-.launch-date{
-    grid-row:3;
-}
-.launch-success{
-    grid-row: 4;
-}
-.launch-upcoming{
-    grid-row:5;
-}
-.launch-id{
-    grid-row: 6;
-}
 
-/* .patch-details{
-    display:flex;
-    flex-direction: column;
-
-} */
-
-
-.launch-link>div {
+.launch-link {
     
    width: 30%;
    background-color: maroon;
@@ -107,4 +93,11 @@ h2{
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+@media (max-width: 850px){
+    .launch-card{
+        flex-direction: column;
+        align-items: center;
+    }
 }

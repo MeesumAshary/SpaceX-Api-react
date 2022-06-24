@@ -85,3 +85,10 @@ html, body{
 .card>h2{
     color: rgb(41,95,172)
 }
+
+@media (max-width: 1200px){
+    .details-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

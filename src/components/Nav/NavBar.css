@@ -18,9 +18,21 @@
     background-color: black;
     height: 100%;
     font-size: 2em;
+    font-weight: bolder;
     
 }
 .nav-list:hover{
     text-decoration: underline;
     color: rgb(41, 95, 172);
+}
+
+@media  (max-width: 850px){
+    .nav-bar{
+        display: grid;
+       grid-template-rows: 2;
+       grid-template-columns: 3fr ;
+       line-height: 1.5;
+    }
+    
+
 }

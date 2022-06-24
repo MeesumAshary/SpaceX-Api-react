@@ -29,22 +29,24 @@ function Launches(props) {
 				<div className='launch-container'>
 					<h2>Latest Launch</h2>
 					<div className='launch-card'>
-						<div className='launch-name'>{latestLaunchData.name}</div>
-						<div className='launch-data'>
-							<div className='launch-id'>
-								<span className='label'>Launch ID : </span> {latestLaunchData.id}
-							</div>
-							<div className='launch-date'>
-								<span className='label'>Date : </span> {latestLaunchData.date_local}
-							</div>
-							<div className='launch-success'>
-								<span className='label'>Success:</span>{' '}
-								{latestLaunchData.success ? <span>Yes</span> : <span>No</span>}
-							</div>
-							<div className='launch-upcoming'>
-								<span className='label'>Upcoming:</span>{' '}
-								{latestLaunchData.upcoming ? <span>Yes</span> : <span>No</span>}
-							</div>
+						<div className="launch-name-data">
+							<div className='launch-name'>{latestLaunchData.name}</div>
+							<div className='launch-info'>
+								<div className='launch-id'>
+									<span className='label'>Launch ID : </span> {latestLaunchData.id}
+								</div>
+								<div className='launch-date'>
+									<span className='label'>Date : </span> {latestLaunchData.date_local}
+								</div>
+								<div className='launch-success'>
+									<span className='label'>Success:</span>{' '}
+									{latestLaunchData.success ? <span>Yes</span> : <span>No</span>}
+								</div>
+								<div className='launch-upcoming'>
+									<span className='label'>Upcoming:</span>{' '}
+									{latestLaunchData.upcoming ? <span>Yes</span> : <span>No</span>}
+								</div>
+						</div>
 						</div>
 						<div className='patch-details'>
 							<div className='launch-patch'>
@@ -64,21 +66,23 @@ function Launches(props) {
 					{launchData.map((Launch, index) => {
 						return (
 							<div className='launch-card' key={index}>
-								<div className='launch-name'>{Launch.name}</div>
-								<div className='launch-data'>
-									<div className='launch-id'>
-										<span className='label'>Launch ID : </span> {Launch.id}
-									</div>
-									<div className='launch-date'>
-										<span className='label'>Date : </span> {Launch.date_local}
-									</div>
-									<div className='launch-success'>
-										<span className='label'>Success:</span>{' '}
-										{Launch.success ? <span>Yes</span> : <span>No</span>}
-									</div>
-									<div className='launch-upcoming'>
-										<span className='label'>Upcoming:</span>{' '}
-										{Launch.upcoming ? <span>Yes</span> : <span>No</span>}
+								<div className="launch-name-data">
+									<div className='launch-name'>{Launch.name}</div>
+									<div className='launch-info'>
+										<div className='launch-id'>
+											<span className='label'>Launch ID : </span> {Launch.id}
+										</div>
+										<div className='launch-date'>
+											<span className='label'>Date : </span> {Launch.date_local}
+										</div>
+										<div className='launch-success'>
+											<span className='label'>Success:</span>{' '}
+											{Launch.success ? <span>Yes</span> : <span>No</span>}
+										</div>
+										<div className='launch-upcoming'>
+											<span className='label'>Upcoming:</span>{' '}
+											{Launch.upcoming ? <span>Yes</span> : <span>No</span>}
+										</div>
 									</div>
 								</div>
 								<div className='patch-details'>

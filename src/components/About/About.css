@@ -1,0 +1,19 @@
+
+.About-page-container{
+    display:flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: green; */
+}
+
+.about-text{
+    color: white;
+    background-color: rgb(15,16,17);
+    font-size: 2em;
+    width: 70vw;
+    line-height: 1.5;
+    padding: 2em;
+    border-radius: 2em;
+}

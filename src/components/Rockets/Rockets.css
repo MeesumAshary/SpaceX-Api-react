@@ -8,7 +8,7 @@ html,body{
     height:100%;
 }
 h1{
-    color: white;
+    color: rgb(41, 95, 172);
 }
 
     
@@ -97,9 +97,19 @@ h1{
 .rocket-img{
     margin:0;
     height:30em;
-    width: 45em;
+    width: 100%;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
 
     
+}
+
+@media (max-width:1400px ){
+    .rocket-card{
+        flex-direction: column;
+    }
+    .rocket-img-wrapper {
+        width: 100%;
+
+    }
 }
