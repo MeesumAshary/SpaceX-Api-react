@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height:100%
+}
+
+
+.Page-container>h2{
+    color:white;
+    margin-top: 2em;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 15px 0 #fcfcfc33;
+    transition: box-shadow 0.3s;
+    color: white;
+    background-color: rgb(15,16,17);
+    
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+}    
+
+.Page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background: green; */
+    height: 100%;
+    background: black;
+
+}
+
+.details-container{
+    align-self: center;
+    display: grid;
+    grid-template-rows: 30em 30em 50em;
+    grid-template-columns: 22em 22em 22em;
+    gap: 7em;
+    margin-top: 5em;
+
+}
+
+.rocket-img{
+    grid-row:3;
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.rocket-img>img{
+    margin:0;
+    grid-column: 2/span 4;
+    height: 40em
+  
+}
+
+
+.card>div{
+    display: flex;
+    /* background: red; */
+    width: 80%;
+    justify-content: space-between;
+    border-bottom:solid white 0.1em;
+    font-size: 1.2em;
+    /* margin-bottom: 0.3em; */
+    
+}
+.payloads{
+    grid-row: 2;
+    grid-column: 3;
+}
+.card>h2{
+    color: rgb(41,95,172)
+}

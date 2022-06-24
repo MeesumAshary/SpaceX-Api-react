@@ -17,5 +17,10 @@
     color:white;
     background-color: black;
     height: 100%;
+    font-size: 2em;
+    text-decoration: none;
 }
-
+.nav-list:hover{
+    text-decoration: underline;
+    color: rgb(41, 95, 172);
+}

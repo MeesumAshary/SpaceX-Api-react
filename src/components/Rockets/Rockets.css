@@ -3,7 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    background:black;
+    height:100%;
+}
+h1{
+    color: white;
+}
+.rocket-container{
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+}
 
-.List {
-    list-style: none ;
+.rocket-card {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1px;
+    box-shadow: 0 4px 15px 0 #fcfcfc33;
+    transition: box-shadow 0.3s;
+    color: white;
+    background-color: rgb(15, 16, 17);
+    /* width: 70%; */
+}
+
+
+
+
+.rocket-img{
+    margin:0;
+    
 }
