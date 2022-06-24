@@ -7,11 +7,16 @@
     background: rgb(15,16,17);
     width: 60vh;
     height: 30vh;
-    margin: 5em 0;
+    margin: 2em 0;
     color: white;
-    display: grid;
-    
-
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    line-height: 1.5;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-left: 2em;
+    border-radius: 10%;
 }
 
 .list-wrapper{
@@ -19,4 +24,13 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.starlink-name{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.starlink-launch{
+    color: white;
+    text-decoration: none;
 }

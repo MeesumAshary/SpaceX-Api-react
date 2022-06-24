@@ -32,17 +32,26 @@ function Starlink(props) {
 						if (starlink.latitude && starlink.longitude) {
 							return (
 								<div className='starlink-container' key={index}>
-									<div className='starlink-id'>ID: {starlink.id}</div>
+									<div className='starlink-name'>
+										Name: {starlink.spaceTrack.OBJECT_NAME}
+									</div>
+									<div className='starlink-id'>
+										ID: {starlink.spaceTrack.OBJECT_ID}
+									</div>
 									<div className='starlink-id'>
 										Launch Date: {starlink.spaceTrack.LAUNCH_DATE}
 									</div>
-									<div className='starlink-lat-long'>
-										Latitude: {starlink.latitude} - Longitude: {'  '}
+									<div className='starlink-lat'>
+										Latitude: {starlink.latitude} -
+									</div>
+									<div className='starlink-long'>
+										Longitude: {'  '}
 										{starlink.longitude}
 									</div>
+
 									<Link to={`/LaunchDetails/${starlink.launch}`}>
 										<div className='starlink-launch'>
-											{'  '}
+											Launch ID:
 											{starlink.launch}
 										</div>
 									</Link>
