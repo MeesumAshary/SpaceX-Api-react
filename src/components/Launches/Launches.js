@@ -26,24 +26,40 @@ function Launches(props) {
 	if (launchData && latestLaunchData) {
 		return (
 			<div>
-				
 				<div className='latest-launch-container'>
 					<h2>Latest Launch</h2>
-					<div className="launch-card">
-						<div className='latest-launch-name'>{latestLaunchData.name}</div>
-						<div className='latest-launch-id-date'>
-							{latestLaunchData.id} - {latestLaunchData.date_local}
+					<div className='launch-card'>
+						<div className='launch-name'>{latestLaunchData.name}</div>
+						<div className='launch-data'>
+							<div className='launch-id'>
+								<span className='label'>Launch ID : </span> {latestLaunchData.id}
+							</div>
+							<div className='launch-date'>
+								<span className='label'>Date : </span> {latestLaunchData.date_local}
+							</div>
+							<div className='launch-success'>
+								<span className='label'>Success:</span>{' '}
+								{latestLaunchData.success ? <span>Yes</span> : <span>No</span>}
+							</div>
+							<div className='launch-upcoming'>
+								<span className='label'>Upcoming:</span>{' '}
+								{latestLaunchData.upcoming ? <span>Yes</span> : <span>No</span>}
+							</div>
 						</div>
-						<div className='latest-launch-patch'>
-							<img src={latestLaunchData.links.patch.small} alt='' />
+						<div className='patch-details'>
+							<div className='launch-patch'>
+								<img src={latestLaunchData.links.patch.small} alt='' />
+							</div>
+							<Link
+								className='launch-link'
+								to={`/LaunchDetails/${latestLaunchData.id}`}>
+								<div> Details...</div>
+							</Link>
 						</div>
-						<Link to={`/LaunchDetails/${latestLaunchData.id}`}>
-							<div> Details...</div>
-						</Link>
 					</div>
 				</div>
 
-				<div className='launch-list'>
+				<div className='launch-container'>
 					<h2>Previous Launches</h2>
 					{launchData.map((Launch, index) => {
 						return (
