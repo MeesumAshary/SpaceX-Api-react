@@ -4,9 +4,9 @@
 }
 
 .starlink-container{
-    background: rgb(0, 29, 61,1);
-    width: 50vh;
-    height: 20vh;
+    background: rgb(15,16,17);
+    width: 60vh;
+    height: 30vh;
     margin: 5em 0;
     color: white;
     display: grid;

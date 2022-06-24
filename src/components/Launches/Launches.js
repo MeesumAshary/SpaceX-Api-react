@@ -26,7 +26,7 @@ function Launches(props) {
 	if (launchData && latestLaunchData) {
 		return (
 			<div>
-				<div className='latest-launch-container'>
+				<div className='launch-container'>
 					<h2>Latest Launch</h2>
 					<div className='launch-card'>
 						<div className='launch-name'>{latestLaunchData.name}</div>
