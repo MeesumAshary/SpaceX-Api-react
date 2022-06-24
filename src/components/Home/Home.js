@@ -28,7 +28,7 @@ function Home(props) {
 				<div className='history-card'>
 					{history.map((element, index) => {
 						return (
-							<div className='history-info'>
+							<div key= {element.id} className='history-info'>
 								<div className='history-date'>{element.event_date_utc}</div>
 								<div className='history-title-det'>
 									<div className='history-title'> {element.title} </div>
