@@ -10,27 +10,96 @@ html,body{
 h1{
     color: white;
 }
-.rocket-container{
-    display:grid;
-    grid-template-rows: repeat(4,1fr);
-}
+
+    
+
 
 .rocket-card {
     display:flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 1px;
-    box-shadow: 0 4px 15px 0 #fcfcfc33;
-    transition: box-shadow 0.3s;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    /* box-shadow: 0 4px 15px 0 #fcfcfc33; */
+    /* transition: box-shadow 0.3s; */
     color: white;
     background-color: rgb(15, 16, 17);
-    /* width: 70%; */
+    /* font-family: 'Roboto',sans-serif; */
+    height: 90%;
+    margin: 5em;
+   
+}
+
+.rocket-name-des{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+    height: 30em;
+    width: 30%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    
+
+}
+.rocket-name{
+    align-self: center;
+    font-size: 3em;
+    color:rgb(41, 95, 172)
+}
+.rocket-description{
+    align-self: center;
+    font-size: 1.5em;
+
+}
+
+.launch-data{
+    height: 30em;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+}
+
+.first-flight{
+    grid-row:3;
+}
+
+.cost{
+    grid-row:4;
+}
+
+.stages{
+    grid-row: 5;
+}
+
+.boosters{
+    grid-row:6;
 }
 
 
-
+.rocket-link{
+    grid-row: 8;
+    background: maroon;
+    text-align: center;
+    padding: 1rem;
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-bottom-right-radius: 5%;
+}
+.rocket-img-wrapper{
+    height: 100%;
+    width: 45em;
+    margin: 0;
+    
+}
 
 .rocket-img{
     margin:0;
+    height:30em;
+    width: 45em;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+
     
 }
