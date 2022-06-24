@@ -13,14 +13,6 @@ function Home(props) {
 						alt=''
 					/>
 				</div>
-				<form>
-					<label htmlFor='input'>
-						{' '}
-						Our website is under Construction. Please email us for any concerns!
-					</label>
-					<input type='email' placeholder='Please enter a valid email' />
-					<button type='Submit'> Notify Me</button>
-				</form>
 			</div>
 		);
 }

@@ -1,21 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family:'Roboto',sans-serif
 }
-.launch-container {
-    background: rgb(0, 29, 61, 1);
-    width: 50vh;
-    /* height: 20vh; */
-    margin: 5em 0;
+
+
+h2{
+    color: rgb(41, 95, 172);
+    text-align: left;
+    margin-left: 2em;
+    text-decoration: underline;
+}
+.launch-list{
+    display:grid;
+}
+.launch-card {
+    display:grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    /* box-shadow: 0 4px 15px 0 #fcfcfc33; */
+    /* transition: box-shadow 0.3s; */
     color: white;
-    display: grid;
-
-
+    background-color: rgb(15, 16, 17);
+    /* font-family: 'Roboto',sans-serif; */
+    /* height: 90%; */
+    margin: 5em 15em;
+    
 }
 
-.launch-list {
+.patch-details {
+    grid-row:1 /span 2;
+    grid-column: 2;
+}
+.launch-data{
+    grid-row: 2;
+    grid-column: 1;
+    padding: 3em;
+    
+}
+
+.launch-name{
+    align-self: center;
+    font-size: 3em;
+    color: rgb(41, 95, 172);
+    border-bottom: solid rgb(41, 95, 172) 0.1em;
+    border-right: solid rgb(41, 95, 172) 0.1em;
+}
+
+.launch-date,.launch-success,.launch-upcoming,.launch-id{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid white 0.1em;
+    align-self: center;
+    
+}
+.launch-date{
+    grid-row:3;
+}
+.launch-success{
+    grid-row: 4;
+}
+.launch-upcoming{
+    grid-row:5;
+}
+.launch-id{
+    grid-row: 6;
+}
+
+.patch-details{
+    display:grid;
+    grid-template-rows:2fr 0.5fr 0.5fr ;
+}
+.launch-link>div {
+   width: 30%;
+   background-color: maroon;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-bottom-right-radius: 5%;
+    
+}
+.launch-link{
+    grid-row: 3;
+    align-self:end;
+    
 }
