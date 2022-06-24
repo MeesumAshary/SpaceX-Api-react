@@ -15,7 +15,7 @@ function Starlink(props) {
 	useEffect(() => {
 		axios.get(url).then((res) => {
 			setSatelliteData(res.data);
-			console.log(res.data);
+			// console.log(res.data);
 		});
 
 	}, []);
@@ -33,24 +33,24 @@ function Starlink(props) {
 							return (
 								<div className='starlink-container' key={index}>
 									<div className='starlink-name'>
-										Name: {starlink.spaceTrack.OBJECT_NAME}
+										{starlink.spaceTrack.OBJECT_NAME}
 									</div>
-									<div className='starlink-id'>
+									<div className='starlink-id dat'>
 										ID: {starlink.spaceTrack.OBJECT_ID}
 									</div>
-									<div className='starlink-id'>
+									<div className='starlink-id dat'>
 										Launch Date: {starlink.spaceTrack.LAUNCH_DATE}
 									</div>
-									<div className='starlink-lat'>
+									<div className='starlink-lat dat'>
 										Latitude: {starlink.latitude} -
 									</div>
-									<div className='starlink-long'>
+									<div className='starlink-long dat'>
 										Longitude: {'  '}
 										{starlink.longitude}
 									</div>
 
 									<Link to={`/LaunchDetails/${starlink.launch}`}>
-										<div className='starlink-launch'>
+										<div className='starlink-launch dat'>
 											Launch ID:
 											{starlink.launch}
 										</div>

@@ -13,7 +13,7 @@ function LaunchDetails(props) {
     
     useEffect(() => {
 			axios.get(url).then((launchRes) => {
-				console.log(launchRes.data);
+				// console.log(launchRes.data);
 				setLaunchDetails(launchRes.data);
 			});
 		}, []);

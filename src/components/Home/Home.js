@@ -16,7 +16,7 @@ function Home(props) {
 				historyRes.data[12],
 				historyRes.data[11],
 			]);
-			console.log(history);
+			// console.log(history);
 		});
 	}, []);
 

@@ -13,11 +13,11 @@ function Launches(props) {
 	useEffect(() => {
 		axios.get(url).then((res) => {
 			setLaunchData(res.data);
-			console.log(res.data);
+			// console.log(res.data);
 		});
 		axios.get(url + '/latest').then((data) => {
 			setLatestLaunchData(data.data);
-			console.log(data.data);
+			// console.log(data.data);
 		});
 	}, []);
 

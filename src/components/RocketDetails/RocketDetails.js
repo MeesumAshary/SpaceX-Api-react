@@ -10,7 +10,7 @@ function RocketDetails(props) {
 
 	useEffect(() => {
 		axios.get(url).then((rocketRes) => {
-			console.log(rocketRes.data);
+			// console.log(rocketRes.data);
 			setRocketDetails(rocketRes.data);
 		});
 	}, []);
