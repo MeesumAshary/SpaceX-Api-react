@@ -12,6 +12,10 @@
     line-height: 4
 }
 
+.nav-link{
+    text-decoration: none;
+}
+
 .nav-list{
     text-decoration: none;
     color:white;
@@ -21,7 +25,7 @@
     font-weight: bolder;
     
 }
-.nav-list:hover{
+.nav-link:hover, .nav-list:hover{
     text-decoration: underline;
     color: rgb(41, 95, 172);
 }

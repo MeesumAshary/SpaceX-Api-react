@@ -13,22 +13,22 @@ function NavBar(props) {
 	return (
 		<div className='nav-container'>
 			<ul className='nav-bar'>
-				<Link to='/'>
+				<Link className = 'nav-link' to='/'>
 					<li className='nav-list home-list'>MeesX🚀</li>
 				</Link>
-				<Link to='/'>
+				<Link className = 'nav-link' to='/'>
 					<li className='nav-list home-list'>Home</li>
 				</Link>
-				<Link to='/Rockets'>
+				<Link className = 'nav-link' to='/Rockets'>
 					<li className='nav-list rockets-list'>Rockets</li>
 				</Link>
-				<Link to='/Launches'>
+				<Link className = 'nav-link' to='/Launches'>
 					<li className='nav-list launch-list'>Launches</li>
 				</Link>
-				<Link to='/Starlink'>
+				<Link className = 'nav-link' to='/Starlink'>
 					<li className='nav-list starlink-list'>Starlink</li>
 				</Link>
-				<Link to='/About'>
+				<Link className = 'nav-link' to='/About'>
 					<li className='nav-list about-list'>About</li>
 				</Link>
 			</ul>

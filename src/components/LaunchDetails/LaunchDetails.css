@@ -17,12 +17,15 @@
     flex-direction:column;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+}
+.launchDetails-container{
+
 }
 .data-list{
     display: flex;
     justify-content: space-between;
-    
-    width: 60vw;
+    width: 70vw;
     border-bottom: solid white 0.1em;
     font-size: 2em;
     line-height: 1.5;
@@ -34,4 +37,9 @@
 iframe{
     height: 100%;
     width:100%;
+}
+@media ( max-width:900px ){
+    .data-list, .launchDetails-container, .launchDetails-data {
+        width: 100%
+    }
 }

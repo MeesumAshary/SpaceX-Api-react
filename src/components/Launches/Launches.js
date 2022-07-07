@@ -12,8 +12,8 @@ function Launches(props) {
 
 	useEffect(() => {
 		axios.get(url).then((res) => {
-			setLaunchData(res.data);
-			// console.log(res.data);
+			setLaunchData(res.data.reverse());
+			console.log(res.data);
 		});
 		axios.get(url + '/latest').then((data) => {
 			setLatestLaunchData(data.data);
@@ -64,6 +64,7 @@ function Launches(props) {
 				<div className='launch-container'>
 					<h2>Previous Launches</h2>
 					{launchData.map((Launch, index) => {
+						if(Launch.links.patch.small){
 						return (
 							<div className='launch-card' key={index}>
 								<div className="launch-name-data">
@@ -96,7 +97,7 @@ function Launches(props) {
 									</Link>
 								</div>
 							</div>
-						);
+						)}
 					})}
 				</div>
 			</div>

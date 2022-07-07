@@ -4,28 +4,28 @@ padding:0;
 box-sizing: border-box;
 
 }
+.nav-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .history-page-container{
     display: flex;
-    height: 200vh;
+    height: 90vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 .page-title{
-    margin-top: -13em;
-    margin-bottom: -25em;
     align-self: baseline;
     margin-left: 2em;
 }
 .history-card{
-    /* background: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    /* margin-top: -12em; */
     border-radius: 0.3em;
-    
+    /* width: 50vw; */
 
 }
 
@@ -34,7 +34,7 @@ box-sizing: border-box;
     background-color: rgb(25, 26, 28);
     color: white;
     height: 15em;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,14 +69,15 @@ box-sizing: border-box;
 }
 
 @media (max-width: 850px) {
-    .history-info{
-        height:20em;
+    
+    .nav-container{
+        display:flex;
+        flex-direction: column;
+        height: 130vh;
+
+    }
+    .page-title{
+        margin: 1em
     }
 
-.page-title {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    align-self: baseline;
-    margin-left: 2em;
-}
 }
