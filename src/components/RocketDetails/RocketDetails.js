@@ -18,10 +18,10 @@ function RocketDetails(props) {
 	if (rocketDetails) {
 		return (
 			<div className='Page-container'>
-				<h2>Rocket Details</h2>
+				<h2 className='Page-Title'>Rocket Details</h2>
 				<div className='details-container'>
 					<div className='overview card'>
-						<h2>Overview</h2>
+						<h2 className='card-title'>Overview</h2>
 						<div>
 							<span className='label'>Name:</span> {rocketDetails.name}
 						</div>
@@ -53,7 +53,7 @@ function RocketDetails(props) {
 						</div>
 					</div>
 					<div className='Engine card'>
-						<h2>Engine</h2>
+						<h2 className='card-title'>Engine</h2>
 						<div>
 							<span className='label'>Type:</span> {rocketDetails.engines.type}
 						</div>
@@ -95,7 +95,7 @@ function RocketDetails(props) {
 						</div>
 					</div>
 					<div className='first-stage card'>
-						<h2>First Stage</h2>
+						<h2 className='card-title'>First Stage</h2>
 						<div>
 							<span className='label'>Burn Time:</span>{' '}
 							{rocketDetails.first_stage.burn_time_sec} seconds
@@ -126,7 +126,7 @@ function RocketDetails(props) {
 						</div>
 					</div>
 					<div className='second-stage card'>
-						<h2>Second Stage</h2>
+						<h2 className='card-title'>Second Stage</h2>
 						<div>
 							<span className='label'>Burn Time:</span>{' '}
 							{rocketDetails.second_stage.burn_time_sec} seconds
@@ -153,7 +153,7 @@ function RocketDetails(props) {
 						</div>
 					</div>
 					<div className='payloads card'>
-						<h2>Payloads</h2>
+						<h2 className='card-title'>Payloads</h2>
 						{rocketDetails.payload_weights.map((element) => {
 							return (
 								<div>
@@ -171,8 +171,12 @@ function RocketDetails(props) {
 							);
 						})}
 					</div>
-					<div className='rocket-img '>
-						<img src={rocketDetails.flickr_images} alt={rocketDetails.name} />
+					<div className='rocket-img-container'>
+						<img
+							className='rocket-img'
+							src={rocketDetails.flickr_images}
+							alt={rocketDetails.name}
+						/>
 					</div>
 				</div>
 			</div>

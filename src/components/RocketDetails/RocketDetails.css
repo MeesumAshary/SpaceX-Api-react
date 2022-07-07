@@ -26,6 +26,10 @@ html, body{
     background-color: rgb(15,16,17);
     
 }
+.card-title{
+    margin: 0;
+    font-size: 2em;
+}
 
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -53,14 +57,14 @@ html, body{
 
 }
 
-.rocket-img{
+.rocket-img-card{
     grid-row:3;
     grid-column: 1/span 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     
 }
-.rocket-img>img{
+.rocket-img{
     margin:0;
     grid-column: 2/span 4;
     height: 40em
@@ -90,7 +94,7 @@ html, body{
     .details-container{
         display: flex;
         flex-direction: column;
-        width: 60vw;
+        width: 50vw;
 
     }
     .Page-container{
@@ -102,7 +106,9 @@ html, body{
     .details-container {
         display: flex;
         flex-direction: column;
-        width: 70vw;
-
+        width: 100%;
+    }
+    .Page-Title{
+        margin-left: 0;
     }
 }
