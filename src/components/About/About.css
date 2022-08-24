@@ -2,7 +2,7 @@
 .About-page-container{
     display:flex;
     flex-direction: column;
-    height: 90vh;
+
     align-items: center;
     justify-content: space-around;
     /* background-color: green; */
@@ -16,4 +16,15 @@
     line-height: 1.5;
     padding: 2em;
     border-radius: 2em;
+}
+
+@media (max-width: 850px) {
+
+    
+.about-text{
+    width: 100%;
+    padding: 0.5em;
+}
+
+
 }

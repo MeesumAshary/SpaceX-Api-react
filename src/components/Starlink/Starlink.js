@@ -1,26 +1,20 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Starlink.css';
 
 function Starlink(props) {
 	const [satelliteData, setSatelliteData] = useState(null);
-   
 
 	const url = 'https://api.spacexdata.com/v4/starlink';
-
- 
 
 	useEffect(() => {
 		axios.get(url).then((res) => {
 			setSatelliteData(res.data);
 			// console.log(res.data);
 		});
-
 	}, []);
-
-
 
 	if (satelliteData) {
 		return (
